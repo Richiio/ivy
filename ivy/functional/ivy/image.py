@@ -159,12 +159,12 @@ def uint8_img_to_float_img(
 
     Examples
     --------
-    >>> batch_size = 1
+    >>> batch_shape = 1
     >>> h = 2
     >>> w = 2
     >>> d = 4
     >>> x = ivy.arange(h * w * d)
-    >>> image = ivy.reshape(x,(batch_size, h, w, d))
+    >>> image = ivy.reshape(x,(batch_shape, h, w, d))
     >>> y = ivy.uint8_img_to_float_img(image)
     >>> print(y)
     ivy.array([[[3.820471434542632e-37, 1.0082513512365273e-34],
